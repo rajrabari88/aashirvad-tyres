@@ -1,9 +1,14 @@
-<?php include 'header.php'; ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <?php include 'header.php'; ?>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Aashirvad Tyres - Trusted tyre solutions with quality brands, expert support, and over a decade of experience.">
+  <meta name="keywords" content="Aashirvad Tyres, tyre shop, tyres, wheels, auto services">
   <title>About Us - Aashirvad Tyres</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
   <style>
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -134,38 +139,93 @@
       color: #666;
     }
 
-   
-    .fade-in {
+    .fade-in, .zoom-in {
       opacity: 0;
-      transform: translateY(20px);
       transition: all 0.6s ease-out;
     }
 
+    .fade-in {
+      transform: translateY(20px);
+    }
+
     .zoom-in {
-      opacity: 0;
       transform: scale(0.95);
-      transition: all 0.6s ease-out;
     }
 
     .visible {
       opacity: 1 !important;
       transform: none !important;
     }
-
     @media (max-width: 768px) {
-      .about-highlights {
-        flex-direction: column;
-      }
+  .section-bg {
+    padding: 50px 15px;
+    background-size: cover;
+    background-position: center;
+  }
 
-      .team-container {
-        flex-direction: column;
-        align-items: center;
-      }
+  .section-bg h1 {
+    font-size: 28px;
+    line-height: 1.3;
+  }
 
-      .section-bg h1 {
-        font-size: 32px;
-      }
-    }
+  .section-bg h2 {
+    font-size: 22px;
+    margin-top: 20px;
+  }
+
+  .section-bg p {
+    font-size: 16px;
+    line-height: 1.6;
+    padding: 0 10px;
+  }
+
+  .white-section {
+    padding: 40px 15px;
+    border-radius: 8px;
+  }
+
+  .about-highlights {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .highlight-box {
+    padding: 15px;
+    margin: 10px 0;
+    min-width: auto;
+  }
+
+  .team-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .team-member {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .team-member img {
+    width: 90px;
+    height: 90px;
+  }
+
+  .team-member h4 {
+    font-size: 16px;
+  }
+
+  .team-member p {
+    font-size: 13px;
+  }
+}
+
+   
+  
+
+
+
+
   </style>
 </head>
 
@@ -211,24 +271,23 @@
     <h2 class="fade-in" style="margin-top: 50px;">Meet the Team</h2>
     <div class="team-container">
       <div class="team-member zoom-in">
-        <img src="image/1000_F_633279559_VdxhBuRNtw0AlxYxUoIfFxv9kpds2KDH.jpg" alt="Founder">
+        <img src="image/1000_F_633279559_VdxhBuRNtw0AlxYxUoIfFxv9kpds2KDH.jpg" alt="Parbatbhai Rabari - Founder">
         <h4>Parbatbhai Rabari</h4>
         <p>Founder & CEO</p>
       </div>
       <div class="team-member zoom-in">
-        <img src="image/young-indian-businessman-suit-tie-standing-office-ai-generated_843560-800.avif" alt="Sales Manager">
+        <img src="image/young-indian-businessman-suit-tie-standing-office-ai-generated_843560-800.avif" alt="Rajkumar Rabari - Sales Manager">
         <h4>Rajkumar Rabari</h4>
         <p>Sales Manager</p>
       </div>
       <div class="team-member zoom-in">
-        <img src="image/portrait-handsome-young-businessman-standing-office-created-with-generative-ai_762026-15879.avif" alt="Technician">
+        <img src="image/portrait-handsome-young-businessman-standing-office-created-with-generative-ai_762026-15879.avif" alt="Krishkumar Rabari - Lead Technician">
         <h4>Krishkumar Rabari</h4>
         <p>Lead Technician</p>
       </div>
     </div>
   </div>
 
-  
   <script>
     const observer = new IntersectionObserver(entries => {
       entries.forEach(entry => {
